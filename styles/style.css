@@ -1,0 +1,245 @@
+body {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 34, 137), rgb(76, 121, 255));
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: rgb(255, 225, 0);
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 20px;
+    text-shadow: 3px 3px red;
+}
+
+h2 {
+    color: rgb(255, 225, 0);
+    text-align: center;
+    font-size: 28px;
+    animation: pop 2.5s ease-in-out;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: block;
+    position: absolute;
+    top: 20vh;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(0.98)
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.tip h3 {
+    color: white;
+    text-align: center;
+}
+
+.tip {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    margin-bottom: 1em;
+}
+
+progress {
+    transform: rotate(-90deg);
+    width: 55vh;
+    height: 70px;
+    display: block;
+    position: absolute;
+    top: 40vh;
+    accent-color: yellow;
+}
+
+#maan {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+#manaveld {
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    height: 80vh;
+    position: absolute;
+    margin: 1em;
+}
+
+#manaveld h3 {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
+}
+
+#manaveld p {
+    position: absolute;
+    top: 10vh;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#ballveld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+    position: absolute;
+    bottom: 5%;
+    margin: 0em;
+}
+
+#ball {
+    width: 400px;
+    position: relative;
+    cursor: pointer;
+}
+
+#getal {
+    color: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 6em;
+    position: absolute;
+    z-index: 3;
+}
+
+#firework {
+    position: absolute;
+    top: 28vh;
+    left: 35vw;
+    z-index: 4;
+    width: 30vw;
+    cursor: pointer;
+}
+
+#buttonveld {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 80vh;
+    position: absolute;
+    margin: 1em;
+    right: 0;
+}
+
+.answer {
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #ff0e0e;
+    border-radius: 10px;
+    padding: 1em 0em 1em 0em;
+    width: 200px;
+    height: 60px;
+    display: block;
+    margin: 1em;
+}
+
+.number {
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #ff0e0e;
+    border-radius: 10px;
+    padding: 1em 0em 1em 0em;
+    width: 200px;
+    height: 60px;
+    display: block;
+    margin: 1em;
+}
+
+/* bron: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#example_using_minlength_and_maxlength */
+textarea {
+    border: 2px solid red;
+    color: black;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2em;
+    resize: none;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    border: 3px solid #ff0e0e;
+    cursor: pointer;
+}
+
+.shake {
+    animation: shake 0.2s ease-in-out;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0px, 0px)
+    }
+
+    25% {
+        transform: translate(-25px, 0px)
+    }
+
+    75% {
+        transform: translate(25px, 0px)
+    }
+
+    100% {
+        transform: translate(0px, 0px)
+    }
+}
+
+#credit {
+    margin: 0em 2em 0em 0em;
+    position: absolute;
+    right: 0;
+    font-weight: 500;
+    color: white
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+#chooseMax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

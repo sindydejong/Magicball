@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <title> Magic 8-ball </title>
+</head>
+
+<body>
+    <h5 id="credit"> Made by Sindy de Jong </h5>
+    <section>
+        <h1> Magic 8-Ball</h1>
+    </section>
+    <img id="firework" class="invisible" src="images/firework.gif" alt="firework gif">
+    <section>
+        <h2> Let magic guide your Journey </h2>
+    </section>
+
+    <div id="manaveld">
+        <p id="tipmana"> </p>
+        <img id="maan" src="images/maan.png" alt="picture maan">
+        <progress max="100" value="100"> </progress>
+        <h3> Manalevel </h3>
+    </div>
+
+    <div id="ballveld">
+        <img id="ball" src="images/ball.png" alt="picture 8-ball">
+        <div id="getal"> </div>
+    </div>
+
+    <div id="buttonveld">
+
+        <h3> Modes: </h3>
+
+        <button class="answer"> Give me answers </button>
+
+        <button class="number"> Give me a number </button>
+        
+        <div class="invisible" id="chooseMax">
+            <label for="maxNumber"> Choose a max number: </label>
+            <textarea id="maxNumber" name="textarea1" rows="1" cols="7" maxlength="3"
+                placeholder="Max 999">10</textarea>
+        </div>
+
+    </div>
+    <div class="tip">
+        <h3> Tip: Click the ball to shake! </h3>
+    </div>
+
+    <script src="scripts/index.js"> </script>
+</body>
+
+</html>
